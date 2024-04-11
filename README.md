@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/agueriv/">
-    <img src="img/logoNZ.svg" alt="Logo" width="200" height="80">
+    <img src="img/logo.png" alt="Logo" width="200" height="80">
   </a>
 
   <h3 align="center">Web BioPark</h3>
