@@ -1,0 +1,275 @@
+header {
+  background-image: url("../img/conservation/heroConservation2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 200px;
+}
+
+/* --------------- HERO CONTENT ------------------- */
+
+.heroContent {
+  width: 90%;
+  margin: auto;
+}
+
+.heroContent h1 {
+  margin: 0 0 0 auto;
+  text-align: right;
+  font-size: var(--size-h1);
+  margin-bottom: 0.3em;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heroContent h3 {
+  text-align: right;
+  font-weight: 300;
+  font-size: var(--size-h3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* ---------------- SECTION WHY TRUST SECTION 1 -------------- */
+.whyTrust {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 12%;
+  margin-bottom: 200px;
+}
+
+.whyTrust .whyTrustImage {
+  flex: 1 1 38%;
+  background-image: url("../img/conservation/nuestrosObjetivos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+  border-radius: 7px;
+}
+
+.whyTrust .whyTrustText {
+  flex: 1 1 50%;
+}
+
+.whyTrust .whyTrustText h3 {
+  color: var(--orange);
+  font-size: var(--size-h3);
+  font-family: Quicksand, sans-serif;
+}
+
+.whyTrust .whyTrustText p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--size-text);
+}
+
+/* ------------ BANNER FOCA --------------- */
+.banner {
+  background-image: url("../img/conservation/bannerConservation.jpg");
+  height: 500px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-bottom: 200px;
+}
+
+/* ----------- SECCION CARE WORLD SECTION 2 ---------- */
+.weCareWorld {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 12%;
+  margin-bottom: 200px;
+}
+
+.weCareWorld .weCareWorldText {
+  flex: 1 1 50%;
+}
+
+.weCareWorld .weCareWorldText h3 {
+  color: var(--orange);
+}
+
+#valuesTitle {
+  margin-bottom: 1.6em;
+}
+
+.weCareWorld .weCareWorldText ul {
+  line-height: 1.8;
+  margin-bottom: 2em;
+}
+
+.weCareWorld .weCareWorldText ul li {
+  font-size: var(--size-text);
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  margin-left: 38px;
+}
+
+.weCareWorld .weCareWorldText ul li::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/symbols/tick.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -38px;
+  bottom: 8px;
+}
+
+.weCareWorld .weCareWorldImage {
+  flex: 1 1 38%;
+  background-image: url("../img/conservation/principios.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 750px;
+  border-radius: 7px;
+}
+
+/* ---------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width: 1500px) {
+  header {
+    background-attachment: scroll;
+  }
+
+  header .heroContent h1 {
+    font-size: 4.3rem;
+  }
+
+  header .heroContent h3 {
+    font-size: 2.2rem;
+  }
+
+  .weCareWorld,
+  .whyTrust {
+    width: 90%;
+    gap: 9%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .weCareWorld,
+  .whyTrust {
+    width: 90%;
+    gap: 5%;
+  }
+
+  .weCareWorld .weCareWorldImage,
+  .whyTrust .whyTrustImage {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    margin-bottom: 150px;
+  }
+  .weCareWorld,
+  .whyTrust {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+
+  .weCareWorld .weCareWorldText,
+  .whyTrust .whyTrustText {
+    width: 80%;
+    margin-bottom: 150px;
+  }
+
+  .weCareWorld .weCareWorldText p,
+  .whyTrust .whyTrustText p {
+    text-align: justify;
+  }
+
+  .weCareWorld .weCareWorldImage,
+  .whyTrust .whyTrustImage {
+    width: 100%;
+    flex: 1 1 600px;
+    border-radius: 0;
+  }
+
+  .whyTrust .whyTrustImage {
+    order: 1;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .rd-border {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .saltoLinea {
+    display: inline;
+  }
+  header .heroContent h1 {
+    text-align: left;
+    font-size: 3.3rem;
+  }
+  header .heroContent h3 {
+    text-align: left;
+    font-size: 2rem;
+    width: 80%;
+  }
+  .weCareWorld .weCareWorldText,
+  .whyTrust .whyTrustText {
+    width: 90%;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .heroContent h3 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .heroContent h1 {
+    text-align: center;
+    font-size: 3.3rem;
+  }
+  header .heroContent h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 527px) {
+  .longLi2::before {
+    top: 6px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .longLi1::before {
+    top: 6px;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .ctaText {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,643 @@
+/* --------------------- Tipografías --------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Background general de la página */
+:root {
+  background: #0a1413;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  /* Variables para futuros usos sobre look and feel del a web */
+  --orange: #ed7f39;
+  --size-h1: 5.2rem;
+  --size-h2: 3.5rem;
+  --size-h3: 2.4rem;
+  --size-h4: 1.9rem;
+  --size-h5: 1.4rem;
+  --size-banners: 4.4rem;
+  --size-text: 1.5rem;
+  /* Anchura de la page */
+}
+
+.wrapper {
+  /* width: 90%; */
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  /* Scroll suave */
+  scroll-behavior: smooth;
+  /* Reset de los user agent styles para margen y padding */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--size-h1);
+  margin-bottom: 1em;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-size: var(--size-h2);
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--size-h3);
+  margin-bottom: 0.5em;
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: var(--size-h4);
+}
+
+h5 {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: var(--orange);
+  font-weight: 400;
+  font-size: var(--size-h5);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--size-text);
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+/* ------------------- MENU --------------------- */
+.mainMenu {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  height: 125px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 210px;
+}
+
+.list-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav-item a {
+  font-family: "Quicksand", Montserrat, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: var(--orange);
+}
+
+/* Clase para el margen del menú */
+.mr-menu {
+  margin-right: 3rem;
+}
+
+/* Clase para la página en la que estamos */
+.actualPage a {
+  border-top: 2px solid rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Clase para remarcar partes del texto */
+.textBold {
+  font-weight: 500;
+}
+
+/* Clase para border top */
+.bt-Titles {
+  border-top: 3px solid var(--orange);
+}
+
+/* Clase para texto naranja */
+.color-orange {
+  color: var(--orange);
+}
+
+/* Clase para border de fotos redondeados */
+.rd-border {
+  border-radius: 7px;
+}
+
+/* Subfooter responsive */
+.sfResp {
+  display: none;
+}
+
+/* Enlaces CTAS generales */
+.ctaText {
+  text-decoration: none;
+  color: white;
+  font-size: var(--size-text);
+  border-bottom: 2px solid var(--orange);
+  position: relative;
+}
+
+/* Clase para hacer que los h1 se dividan en varias lineas */
+.saltoLinea {
+  display: block;
+}
+
+/* Margenes inferior */
+.mb-3-5 {
+  margin-bottom: 3.5rem;
+}
+
+.ctaText::after {
+  content: "";
+  background-image: url("../img/symbols/flecha.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  filter: invert(100%);
+  transition: margin-left 0.3s;
+}
+
+.ctaText:hover::after {
+  margin-left: 5px;
+}
+
+/* ----------------------- FOOTER -------------------------- */
+footer {
+  background: rgb(16, 16, 16);
+  padding-top: 100px;
+}
+
+.mainFooter {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+  row-gap: 100px;
+  margin-bottom: 100px;
+}
+
+.footerColumn {
+  flex: 1 1 33%;
+
+  /* border: 1px solid yellow; */
+}
+
+.fc1 p {
+  font-size: var(--size-text);
+  width: 75%;
+}
+
+.footerColumn img {
+  margin-top: -40px;
+  width: 300px;
+  margin-bottom: 1.45rem;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding-left: 0;
+  width: 80%;
+}
+
+.footerColumn ul li {
+  font-size: var(--size-text);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2;
+}
+
+.footerColumn ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  transition: all 0.4s;
+}
+
+.footerColumn ul li a::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/symbols/flechaOrange.svg");
+  position: absolute;
+  left: -20px;
+  bottom: 5px;
+  display: none;
+}
+
+.footerColumn ul li a:hover {
+  color: var(--orange);
+  margin-left: 20px;
+}
+
+.footerColumn ul li a:hover::before {
+  display: block;
+}
+
+.footerColumn h2 {
+  display: inline-block;
+  font-size: var(--size-h2);
+  font-family: Quicksand, sans-serif;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.footerInfo-child {
+  position: relative;
+  margin-left: 45px;
+}
+
+.footerInfo-child::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  left: -45px;
+  bottom: 7px;
+  background-image: url("../img/symbols/spriteRRSSFooter.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerInfo-child:nth-child(1)::before {
+  background-position: 0 0;
+}
+.footerInfo-child:nth-child(2)::before {
+  background-position: 0 -35px;
+}
+.footerInfo-child:nth-child(3)::before {
+  background-position: 0 -70px;
+}
+.footerInfo-child:nth-child(4)::before {
+  background-position: 0 -105px;
+}
+
+.fc4 h2 {
+  font-size: var(--size-h3);
+  margin-bottom: 2rem;
+}
+
+.fc4 form {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
+
+#newsletterIn {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  width: 310px;
+  font-size: var(--size-text);
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+}
+
+#newsletterIn:focus {
+  border-color: var(--orange);
+}
+
+#newsletterIn::placeholder {
+  font-family: Montserrat, sans-serif;
+}
+
+.fc4 form button {
+  width: 35px;
+  height: 35px;
+  margin-left: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.fc4 form button::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/symbols/doubleArrow.svg");
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s;
+}
+
+.fc4 form button:hover {
+  background: transparent;
+  box-shadow: inset 0px 0px 1px 2px var(--orange);
+  transform: translateY(-1px);
+}
+
+.fc4 form button:hover::before {
+  background-image: url("../img/symbols/doubleArrowOrange.svg");
+}
+
+/* ----------------- SUBFOOTER ------------ */
+.subFooter {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  border-top: 2px solid var(--orange);
+}
+.subFooter p {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------- MEDIA QUERIES ------------- */
+@media screen and (max-width: 1550px) {
+  .mainFooter {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10%;
+    row-gap: 5%;
+    padding-bottom: 0;
+  }
+  .footerColumn {
+    flex: 1 1 40%;
+    margin-bottom: 100px;
+  }
+
+  .fc1 p {
+    width: 90%;
+  }
+  .fc2 {
+    order: 1;
+  }
+  .fc3 ul {
+    width: 100%;
+  }
+  .fc4 {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .mainMenu {
+    flex-flow: column wrap;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .mainFooter {
+    width: 88%;
+  }
+  .fc2 h2,
+  .fc3 h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .mainFooter {
+    width: 80%;
+  }
+
+  .footerColumn {
+    flex: 1 1 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+
+  .fc3 {
+    order: 2;
+    flex: 1 1 60%;
+  }
+
+  .fc2 {
+    order: 1;
+    flex: 1 1 20%;
+  }
+  .fc4 {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mainMenu {
+    width: 95%;
+    row-gap: 0;
+    height: 100px;
+  }
+
+  .mr-menu {
+    margin-right: 0px;
+  }
+
+  nav {
+    width: 95%;
+  }
+
+  .list-nav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 160px;
+  }
+
+  .nav-item a {
+    font-size: 3vw;
+  }
+
+  /* FOOTER */
+  .fc1 p {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-item a {
+    font-size: 3.8vw;
+  }
+
+  .subFooter > p {
+    display: none;
+  }
+
+  .sfResp {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .mainFooter {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .mainFooter .footerColumn img {
+    width: 250px;
+  }
+}

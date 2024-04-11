@@ -1,0 +1,734 @@
+header {
+  background-image: url("../img/contact/heroContact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+/* ------------ HERO CONTENT ------------ */
+.heroContent {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.heroContent h1 {
+  margin-bottom: 0.3em;
+}
+
+.heroContent h3 {
+  font-weight: 300;
+  font-size: var(--size-h3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+/* ------ CONTACT SECTION ------------ */
+.contact {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* ---------- CONTACT INFO SECTION 1 --------- */
+.contactInfo {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-bottom: 200px;
+}
+
+.contactInfo ul {
+  font-size: 1.8rem;
+  line-height: 2.4;
+}
+
+.contactInfo ul li {
+  position: relative;
+  margin-left: 55px;
+}
+
+.contactInfo ul li::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  display: block;
+  position: absolute;
+  left: -55px;
+  bottom: 12px;
+  background-image: url("../img/symbols/spriteContactInfo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactInfo ul li:nth-child(1)::before {
+  background-position: 0 0;
+}
+.contactInfo ul li:nth-child(2)::before {
+  background-position: 0 -42px;
+}
+.contactInfo ul li:nth-child(3)::before {
+  background-position: 0 -84px;
+}
+.contactInfo ul li:nth-child(4)::before {
+  background-position: 0 -126px;
+}
+
+/* ----------- CONTACT FORM SECTION 2 ---------- */
+.contactForm {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  gap: 10%;
+  margin-top: -500px;
+  background-color: #0a1413;
+  padding: 5%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+  margin-bottom: 200px;
+}
+
+.contactForm form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.contactForm form label {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: var(--size-text);
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.contactForm form input,
+.contactForm form textarea {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 15px 10px;
+  margin-bottom: 3.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--size-text);
+  resize: none;
+}
+
+.contactForm form textarea {
+  height: 200px;
+}
+
+.contactForm form input:focus,
+.contactForm form textarea:focus {
+  border-color: #ed7e39a3;
+}
+
+.contactForm form button {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: var(--size-text);
+  background-color: var(--orange);
+  padding: 15px 0;
+  border-radius: 7px;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.contactForm form button:hover {
+  box-shadow: inset 0px 0px 2px 3px var(--orange);
+  background: transparent;
+  color: var(--orange);
+  transform: translateY(-1px);
+}
+
+/* ------- WORK WITH US SECTION 3 */
+.workWithUs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 10%;
+  margin-bottom: 200px;
+}
+
+.workWithUs .workWithUsImage {
+  flex: 1 1 38%;
+  background-image: url("../img/contact/workWithUs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 750px;
+  border-radius: 7px;
+}
+
+.workWithUs .workWithUsText {
+  flex: 1 1 50%;
+}
+
+.workWithUs .workWithUsText h3 {
+  color: var(--orange);
+}
+
+.workWithUs .workWithUsText p {
+  margin-bottom: 5rem;
+}
+
+.workWithUs .workWithUsText form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60%;
+}
+
+.workWithUs .workWithUsText form input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--size-text);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 3.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.workWithUs .workWithUsText form input:focus {
+  border-color: var(--orange);
+}
+
+.workWithUs .workWithUsText form button {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: var(--size-text);
+  background-color: var(--orange);
+  padding: 10px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 275px;
+  align-self: center;
+  transition: all 0.3s;
+}
+
+.workWithUs .workWithUsText form button:hover {
+  box-shadow: inset 0px 0px 2px 3px var(--orange);
+  background: transparent;
+  color: var(--orange);
+  transform: translateY(-1px);
+}
+
+/* ------- RESERVATION SECTION 4 */
+.reservation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 10%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.reservation .reservationForm {
+  flex: 1 1 38%;
+  text-align: center;
+}
+
+.reservation .reservationForm form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.reservation .reservationForm form > input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--size-text);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 3.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.reservation .reservationForm form > input:focus {
+  border-color: var(--orange);
+}
+
+.reservation .reservationForm form .fecha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fecha > input {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--size-text);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 3.5rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.fecha > input:focus {
+  border-color: var(--orange);
+}
+
+.reservation .reservationForm form > p {
+  text-align: left;
+  font-size: var(--size-text);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.reservation .reservationForm form fieldset {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reservation .reservationForm form fieldset .opcion1 input,
+.reservation .reservationForm form fieldset .opcion2 input {
+  display: none;
+}
+
+.reservation .reservationForm form fieldset .opcion1 label,
+.reservation .reservationForm form fieldset .opcion2 label {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: var(--size-text);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  padding: 7px 0;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.reservation .reservationForm form fieldset .opcion1 label:hover,
+.reservation .reservationForm form fieldset .opcion2 label:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+.reservation .reservationForm form fieldset .opcion1 input:checked + label,
+.reservation .reservationForm form fieldset .opcion2 input:checked + label {
+  background-color: var(--orange);
+  color: rgba(255, 255, 255, 0.8);
+  border-color: var(--orange);
+}
+
+.reservation .reservationForm form > button {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: var(--size-text);
+  background-color: var(--orange);
+  padding: 10px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 275px;
+  align-self: center;
+  transition: all 0.3s;
+}
+
+.reservation .reservationForm form > button:hover {
+  box-shadow: inset 0px 0px 2px 3px var(--orange);
+  background: transparent;
+  color: var(--orange);
+  transform: translateY(-1px);
+}
+
+.reservation .reservationTicketTypes {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reservationTicketTypes .premiumTicket,
+.reservationTicketTypes .generalTicket {
+  width: 340px;
+  background-color: white;
+  border-radius: 7px;
+  height: 500px;
+}
+
+.reservationTicketTypes .generalTicket .ticketImage,
+.reservationTicketTypes .premiumTicket .ticketImage {
+  height: 60%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.reservationTicketTypes .generalTicket .ticketImage {
+  background-image: url("../img/contact/ticketGeneral.jpg");
+}
+
+.reservationTicketTypes .premiumTicket .ticketImage {
+  background-image: url("../img/contact/ticketPremium.jpg");
+}
+
+.ticketContent {
+  padding-top: 10%;
+  padding-left: 12%;
+}
+
+.reservationTicketTypes .generalTicket h5,
+.reservationTicketTypes .premiumTicket h5 {
+  text-transform: none;
+  font-size: var(--size-text);
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.reservationTicketTypes .generalTicket h5::before,
+.reservationTicketTypes .premiumTicket h5::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/symbols/flechaOrange.svg");
+  position: absolute;
+  left: -23px;
+  bottom: 0px;
+}
+
+.reservationTicketTypes .generalTicket ul,
+.reservationTicketTypes .premiumTicket ul {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: var(--size-text);
+  font-weight: 200;
+}
+
+.reservationTicketTypes .generalTicket ul li,
+.reservationTicketTypes .premiumTicket ul li {
+  line-height: 1.8rem;
+}
+
+/* ------------- SECTION MAPA -------------- */
+.mapContainer {
+  width: 100%;
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 600px;
+}
+
+/* -------------- MEDIA QUERIES ------------------- */
+@media screen and (max-width: 1650px) {
+  .contact {
+    width: 90%;
+  }
+  .workWithUs {
+    width: 90%;
+    gap: 5%;
+  }
+  .workWithUsImage {
+    flex: 5 !important;
+  }
+  .workWithUsText {
+    flex: 6 !important;
+  }
+  .reservation {
+    width: 90%;
+    gap: 5%;
+  }
+  .reservationForm {
+    flex: 5 !important;
+  }
+  .reservationTicketTypes {
+    flex: 6 !important;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  header {
+    background-attachment: scroll;
+  }
+
+  header .heroContent h1 {
+    font-size: 4.3rem;
+  }
+
+  header .heroContent h3 {
+    font-size: 2.2rem;
+  }
+  .workWithUsText {
+    flex: 1 !important;
+  }
+  .workWithUsImage {
+    flex: 1 !important;
+  }
+  .reservation {
+    gap: 0;
+  }
+  .reservationForm {
+    flex: 1 !important;
+  }
+  .reservationTicketTypes {
+    flex: 1 !important;
+    flex-flow: column nowrap;
+    align-content: flex-end;
+    align-items: center;
+  }
+  .reservationTicketTypes .generalTicket {
+    margin-bottom: 50px;
+  }
+  .reservationTicketTypes .generalTicket,
+  .reservationTicketTypes .premiumTicket {
+    flex: 1 1 320px;
+    width: 500px;
+    display: flex;
+  }
+  .reservationTicketTypes .premiumTicket .ticketImage,
+  .reservationTicketTypes .generalTicket .ticketImage {
+    order: 1;
+    flex: 10;
+    height: 100%;
+  }
+  .reservationTicketTypes .premiumTicket .ticketContent,
+  .reservationTicketTypes .generalTicket .ticketContent {
+    flex: 11;
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  .reservationTicketTypes .premiumTicket .ticketContent ul li,
+  .reservationTicketTypes .generalTicket .ticketContent ul li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    margin-bottom: 150px;
+  }
+  .contact {
+    align-items: center;
+    margin-bottom: 150px;
+  }
+  .contactForm {
+    flex: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contactInfo {
+    flex: 4;
+    margin-bottom: 0;
+  }
+  .workWithUs {
+    margin-bottom: 150px;
+  }
+  .reservation {
+    margin-bottom: 150px;
+  }
+  .heroContent {
+    margin-bottom: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .reservationTicketTypes {
+    align-items: flex-end;
+  }
+  .reservationTicketTypes .generalTicket,
+  .reservationTicketTypes .premiumTicket {
+    width: 400px;
+    flex: 1 1 280px;
+  }
+  .reservationTicketTypes .generalTicket h5::before,
+  .reservationTicketTypes .premiumTicket h5::before {
+    top: 0;
+  }
+  .reservationTicketTypes .generalTicket ul li,
+  .reservationTicketTypes .premiumTicket ul li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heroContent {
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+  .contact {
+    flex-flow: column nowrap;
+  }
+  .contactInfo {
+    margin-bottom: 100px;
+  }
+  .contactInfo ul {
+    margin: 0 auto;
+  }
+  .contactForm {
+    margin-left: 0;
+    width: 80%;
+  }
+  .workWithUs {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  .workWithUsImage {
+    flex: 1 1 600px !important;
+    width: 100%;
+    margin-bottom: 150px;
+    border-radius: 0 !important;
+  }
+  .workWithUsText {
+    width: 80%;
+  }
+  .reservation {
+    flex-flow: column nowrap;
+    width: 90%;
+  }
+  .reservationForm {
+    order: 1;
+  }
+  .reservationTicketTypes {
+    width: 100%;
+    margin-bottom: 150px;
+    align-items: center;
+  }
+  .generalTicket,
+  .premiumTicket {
+    flex: 1 1 350px !important;
+    width: 90% !important;
+  }
+  .reservationTicketTypes .generalTicket h5::before,
+  .reservationTicketTypes .premiumTicket h5::before {
+    top: 0;
+  }
+  .reservationTicketTypes .generalTicket ul li,
+  .reservationTicketTypes .premiumTicket ul li {
+    font-size: var(--size-text);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .saltoLinea {
+    display: inline;
+  }
+  header .heroContent h1 {
+    text-align: left;
+    font-size: 3.3rem;
+  }
+  header .heroContent h3 {
+    text-align: left;
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .heroContent h3 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .heroContent h1 {
+    text-align: center;
+    font-size: 3.3rem;
+  }
+  header .heroContent h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .contactForm {
+    width: 100%;
+  }
+  .contactInfo {
+    align-content: center;
+    align-items: center;
+  }
+  .contactInfo h2 {
+    text-align: center;
+  }
+  .workWithUsText {
+    width: 90%;
+  }
+
+  .reservation {
+    width: 100%;
+  }
+  .reservationForm {
+    width: 90%;
+  }
+  .reservationForm form {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  .contactInfo ul .dir::before {
+    bottom: 0;
+    top: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .generalTicket .ticketImage,
+  .premiumTicket .ticketImage {
+    display: none;
+  }
+  .generalTicket,
+  .premiumTicket {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 !important;
+    padding: 50px 0;
+  }
+}

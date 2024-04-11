@@ -1,0 +1,464 @@
+header {
+  background-image: url("../img/facilities/heroFacilities.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 200px;
+}
+
+/* ----------------- HERO CONTENT --------------- */
+
+.heroContent {
+  width: 90%;
+  margin: auto;
+}
+
+.heroContent h1 {
+  margin: 0 0 0 auto;
+  text-align: right;
+  font-size: var(--size-h1);
+  margin-bottom: 0.3em;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heroContent h3 {
+  text-align: right;
+  font-weight: 300;
+  font-size: var(--size-h3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+/* ------------- GENERAL FACILITIES --------------- */
+
+.generalFacilities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 5%;
+  margin-bottom: 200px;
+}
+
+.genFacText {
+  flex: 1 1 47%;
+  text-align: right;
+}
+
+.genFacText h3 {
+  color: var(--orange);
+  font-size: var(--size-h3);
+  font-family: Quicksand, sans-serif;
+}
+
+.genFacText p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--size-text);
+}
+
+.genFacImage {
+  flex: 1 1 47%;
+  background-image: url("../img/facilities/generalInstalaciones.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px;
+}
+
+/* ------------------ BANNER DE FACILITIES --------------------- */
+.banner {
+  height: 700px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-image: url("../img/facilities/bannerTigreFac.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  margin-bottom: 200px;
+}
+
+.banner h2 {
+  font-size: var(--size-h1);
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: right;
+  width: 90%;
+  margin: 0 auto;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* -------------------- AFRICAN SAVANNAH SECTION --------------------- */
+.africanSavannah {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13%;
+
+  margin-bottom: 200px;
+}
+
+.africanSavannahImage {
+  flex: 1 1 42%;
+  background-image: url("../img/facilities/zebrasAfricanas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 845px;
+  position: relative;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.africanSavannahImage::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10%;
+  left: -10%;
+  width: 120%;
+  height: 300px;
+  background-color: var(--orange);
+  border-radius: 7px;
+}
+
+.africanSavannahText {
+  flex: 1 1 45%;
+  text-align: left;
+}
+
+.africanSavannahText h2 {
+  font-size: var(--size-h2);
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+}
+
+.africanSavannahText h3 {
+  font-size: var(--size-h3);
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.africanSavannahText p {
+  font-size: var(--size-text);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* -------------- AMAZON RAINFOREST SECTION -----------------*/
+.amazonRainforest {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13%;
+
+  margin-bottom: 200px;
+}
+
+.amazonRainforestText {
+  flex: 1 1 45%;
+  text-align: right;
+}
+
+.amazonRainforestText h2 {
+  font-size: var(--size-h2);
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+}
+
+.amazonRainforestText h3 {
+  font-size: var(--size-h3);
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.amazonRainforestText p {
+  font-size: var(--size-text);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.amazonRainforestImage {
+  flex: 1 1 42%;
+  background-image: url("../img/facilities/jaguarAmazonico.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 845px;
+  position: relative;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.amazonRainforestImage::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10%;
+  left: -10%;
+  width: 120%;
+  height: 300px;
+  background-color: var(--orange);
+  border-radius: 7px;
+}
+
+/* ------------------ COMING SOON SECTION ------------------- */
+.comingSoon {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 200px;
+}
+
+.comingSoon h2 {
+  font-size: var(--size-h2);
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.aviary {
+  background-image: url("../img/facilities/commingAviario.jpg");
+  background-position: left center;
+}
+
+.aquarium {
+  background-image: url("../img/facilities/commingAcuario.jpg");
+  background-position: right center;
+}
+
+.aviary,
+.aquarium {
+  flex: 1 1 40%;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.aviary::before,
+.aquarium::before {
+  content: "";
+  padding: 15px 25px;
+  background-color: var(--orange);
+  border-top-left-radius: 7px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.8rem;
+}
+
+.aviary::before {
+  content: "Aviary";
+}
+
+.aquarium::before {
+  content: "Aquarium";
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+@media screen and (max-width: 1600px) {
+  .generalFacilities {
+    width: 90%;
+  }
+  .genFacImage {
+    flex: 4;
+    height: 625px;
+  }
+  .genFacText {
+    flex: 5;
+  }
+  .africanSavannah {
+    width: 90%;
+    gap: 8%;
+  }
+  .africanSavannahImage::after {
+    width: 110%;
+    height: 250px;
+    left: -5%;
+    bottom: -7%;
+  }
+  .amazonRainforest {
+    width: 90%;
+    gap: 8%;
+  }
+
+  .amazonRainforestImage::after {
+    width: 110%;
+    height: 250px;
+    left: -5%;
+    bottom: -7%;
+  }
+
+  .comingSoon {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  header {
+    background-attachment: scroll;
+  }
+
+  header .heroContent h1,
+  .banner h2 {
+    font-size: 4.3rem;
+  }
+
+  header .heroContent h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .genFacImage {
+    flex: 1;
+  }
+  .genFacText {
+    flex: 2;
+  }
+  header {
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    margin-bottom: 150px;
+  }
+  .generalFacilities {
+    margin-bottom: 150px;
+  }
+  .genFacImage {
+    display: none;
+  }
+  .genFacText {
+    text-align: left;
+  }
+  .genFacText p {
+    text-align: justify;
+  }
+  .banner {
+    height: 500px;
+    margin-bottom: 150px;
+  }
+  .africanSavannah,
+  .amazonRainforest {
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .africanSavannahImage,
+  .amazonRainforestImage {
+    width: 100%;
+    flex: 1 0 500px;
+    order: 1;
+    background-size: cover;
+  }
+  .africanSavannahText,
+  .amazonRainforestText {
+    flex: 3;
+    width: 80%;
+    margin-bottom: 150px;
+    text-align: left;
+  }
+  .africanSavannahText p,
+  .amazonRainforestText p {
+    text-align: justify;
+  }
+  .africanSavannahImage::after,
+  .amazonRainforestImage::after {
+    display: none;
+  }
+  .comingSoon {
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .imageContainer {
+    flex-flow: column nowrap;
+  }
+  .aviary {
+    margin-bottom: 100px;
+  }
+  .aviary,
+  .aquarium {
+    flex: 1 1 400px;
+    width: 100%;
+  }
+  .rd-border {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .saltoLinea {
+    display: inline;
+  }
+  header .heroContent h1 {
+    text-align: left;
+    font-size: 3.3rem;
+  }
+  header .heroContent h3 {
+    text-align: left;
+    font-size: 2rem;
+    width: 80%;
+  }
+  .banner {
+    align-items: flex-end;
+  }
+  .banner h2 {
+    font-size: 3.3rem;
+    margin-bottom: 50px;
+  }
+  .africanSavannahText,
+  .amazonRainforestText {
+    flex: 3;
+    width: 90%;
+    margin-bottom: 150px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .heroContent h1 {
+    text-align: center;
+    font-size: 3.3rem;
+  }
+  .banner h2 {
+    text-align: center;
+    font-size: 11vw;
+  }
+  header .heroContent h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
