@@ -107,6 +107,6 @@ Distribuida bajo licencia MIT. Lee `LICENSE` para más información.
 
 Ariel Guerrero - rivasguerreroariel@gmail.com
 
-Enlace del proyecto: [https://github.com/agueriv/NewZealandWeb](https://github.com/agueriv/NewZealandWeb)
+Enlace del proyecto: [https://github.com/agueriv/BioParkWeb](https://github.com/agueriv/BioParkWeb)
 
 <p align="right">(<a href="#readme-top">Inicio</a>)</p>
